@@ -1,4 +1,5 @@
 #include "introcam\config.cpp"
+#include "tuning\config.cpp"
 class CfgMusic {
 	tracks[]={};
 	class cam_intro
