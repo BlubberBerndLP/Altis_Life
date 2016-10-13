@@ -88,7 +88,6 @@ class WeaponShops {
 	        { "arifle_SPAR_03_blk_F", "", 33000, 7500, {"", "", -1 } }, //Apex DLC
 	        { "arifle_SPAR_03_khk_F", "", 33000, 7500, {"", "", -1 } }, //Apex DLC
 	        { "arifle_SPAR_03_snd_F", "", 33000, 7500, {"", "", -1 } }, //Apex DLC
-	        { "LMG_03_F", "", 35000, 7500, {"", "", -1 } }, //Apex DLC
 	        { "srifle_DMR_07_blk_F", "", 50000, 7500, {"", "", -1 } }, //Apex DLC
 	        { "srifle_DMR_07_ghex_F", "", 50000, 7500, {"", "", -1 } }, //Apex DLC
 	        { "srifle_DMR_07_hex_F", "", 50000, 7500, {"", "", -1 } }, //Apex DLC
