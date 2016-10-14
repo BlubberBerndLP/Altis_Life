@@ -53,19 +53,19 @@ scriptName "fn_initTuningClient";
 						_curValue set [3, (_curValue select 3) - 1];
 						(vehicle player) setVariable ["mav_tuning", _curValue, true];
 
-						[format["<t size='1' align='center' shadow='2' font='PuristaMedium' color='#12FE00'>You have activated the nitro, it will make the car accelerate faster for 60 seconds<br/> There are %1 nitro boosts left in this vehicle</t>",_curValue select 3]] spawn mav_tuning_fnc_displayText;
+						[format["<t size='1' align='center' shadow='2' font='PuristaMedium' color='#12FE00'>Du hast Nitro aktiviert, es hält nun 60 sekunden<br/> Du hast noch %1 Nitro boosts uebrig in dem KFZ</t>",_curValue select 3]] spawn mav_tuning_fnc_displayText;
 
 						[] spawn {
 							sleep 60;
 							mav_tuning_nitroActive = false;
 
-							["<t size='1' align='center' shadow='2' font='PuristaMedium' color='#12FE00'>The nitro boost has expired</t>"] spawn mav_tuning_fnc_displayText;
+							["<t size='1' align='center' shadow='2' font='PuristaMedium' color='#12FE00'>Dein Nitro ist abgelaufen.</t>"] spawn mav_tuning_fnc_displayText;
 						};
 					} else {
-						["<t size='1' align='center' shadow='2' font='PuristaMedium' color='#ff0000'>This vehicle does not have any nitro boosts left</t>"] spawn mav_tuning_fnc_displayText;
+						["<t size='1' align='center' shadow='2' font='PuristaMedium' color='#ff0000'>Dein KFZ hat keine Nitro Boosts mehr.</t>"] spawn mav_tuning_fnc_displayText;
 					};
 				} else {
-					["<t size='1' align='center' shadow='2' font='PuristaMedium' color='#ff0000'>Nitro is already active</t>"] spawn mav_tuning_fnc_displayText;
+					["<t size='1' align='center' shadow='2' font='PuristaMedium' color='#ff0000'>Nitro ist bereits an</t>"] spawn mav_tuning_fnc_displayText;
 				};
 			};
 
@@ -77,11 +77,11 @@ scriptName "fn_initTuningClient";
 
 					if (isNull ((vehicle player) getVariable ["mav_tuning_light",objNull])) then {
 						[(vehicle player)] remoteExec ["mav_tuning_fnc_enableLight"];
-						["<t size='1' align='center' shadow='2' font='PuristaMedium' color='#12FE00'>Underglow activated</t>"] spawn mav_tuning_fnc_displayText;
+						["<t size='1' align='center' shadow='2' font='PuristaMedium' color='#12FE00'>Unterbodenbeleuchtung wird aktiviert!</t>"] spawn mav_tuning_fnc_displayText;
 						_handled = true;
 					} else {
 						[(vehicle player)] remoteExec ["mav_tuning_fnc_disableLight"];
-						["<t size='1' align='center' shadow='2' font='PuristaMedium' color='#ff0000'>Underglow deactivated</t>"] spawn mav_tuning_fnc_displayText;
+						["<t size='1' align='center' shadow='2' font='PuristaMedium' color='#ff0000'>Unterbodenbeleuchtung ist nun aus!</t>"] spawn mav_tuning_fnc_displayText;
 						_handled = true;
 					};
 				};
