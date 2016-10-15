@@ -115,9 +115,9 @@ class CarShops {
             { "B_MRAP_01_F", { "life_coplevel", "SCALAR", 2 } },
 			{ "C_Offroad_02_unarmed_F", { "life_coplevel", "SCALAR", 2 } },
 			{ "B_T_LSV_01_unarmed_F", { "life_coplevel", "SCALAR", 3 } },
+			{ "B_GEN_Offroad_01_gen_F", { "life_coplevel", "SCALAR", 4 } },
 			{ "B_MRAP_01_hmg_F", { "life_coplevel", "SCALAR", 7 } },
 			{ "O_T_MRAP_02_ghex_F", { "life_coplevel", "SCALAR", 7 } },
-			{ "B_GEN_Offroad_01_gen_F", { "life_coplevel", "SCALAR", 7 } },
 			{ "O_LSV_02_armed_F", { "life_coplevel", "SCALAR", 7 } }
 
         };
@@ -128,6 +128,7 @@ class CarShops {
         vehicles[] = {
             { "B_Heli_Light_01_F", { "", "", -1 } },
             { "B_Heli_Transport_01_F", { "life_coplevel", "SCALAR", 3 } },
+			{ "B_CTRG_Heli_Transport_01_tropic_F", { "life_coplevel", "SCALAR", 5 } },
 			{ "O_T_VTOL_02_vehicle_F", { "life_coplevel", "SCALAR", 7 } },
 			{ "B_T_VTOL_01_infantry_blue_F", { "life_coplevel", "SCALAR", 7 } }
         };
@@ -138,7 +139,7 @@ class CarShops {
         vehicles[] = {
             { "B_Boat_Transport_01_F", { "", "", -1 } },
             { "C_Boat_Civil_01_police_F", { "", "", -1 } },
-            { "B_Boat_Armed_01_minigun_F", { "life_coplevel", "SCALAR", 3 } },
+            { "B_Boat_Armed_01_minigun_F", { "life_coplevel", "SCALAR", 4 } },
             { "B_SDV_01_F", { "", "", -1 } }
         };
     };
