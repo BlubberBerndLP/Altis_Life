@@ -8,7 +8,7 @@ class EditorData
 	toggles=1538;
 	class ItemIDProvider
 	{
-		nextID=2955;
+		nextID=2995;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3459.7593,119.91885,12940.679};
-		dir[]={-0.73708701,-0.6738494,-0.052169241};
-		up[]={-0.67218626,0.73885393,-0.04757522};
-		aside[]={-0.07060574,-4.5688648e-007,0.99755073};
+		pos[]={3243.2681,4.1811523,12961.066};
+		dir[]={0.007450195,-0.38397631,-0.92338258};
+		up[]={0.0030983726,0.92324638,-0.38421333};
+		aside[]={-1.0000367,-5.5694181e-007,-0.0080666514};
 	};
 };
 binarizationWanted=0;
@@ -307,6 +307,24 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -321,24 +339,6 @@ class CustomAttributes
 						};
 					};
 					value=1;
-				};
-			};
-		};
-		class Attribute1
-		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
 				};
 			};
 		};
@@ -400,7 +400,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=1820;
+		items=1860;
 		class Item0
 		{
 			dataType="Marker";
@@ -478,7 +478,6 @@ class Mission
 			type="Empty";
 			angle=297.1044;
 			id=9;
-			atlOffset=0.45309353;
 		};
 		class Item9
 		{
@@ -560,7 +559,7 @@ class Mission
 			type="mil_box";
 			colorName="Color4_FD_F";
 			id=17;
-			atlOffset=0.44947624;
+			atlOffset=9.5367432e-007;
 		};
 		class Item17
 		{
@@ -724,7 +723,7 @@ class Mission
 			name="car1";
 			type="c_car";
 			colorName="ColorWhite";
-			angle=308.99844;
+			angle=308.99841;
 			id=33;
 			atlOffset=0.015213013;
 		};
@@ -787,7 +786,7 @@ class Mission
 			position[]={3638.1335,10.199409,13160.578};
 			name="civ_car_1";
 			type="Empty";
-			angle=222.42039;
+			angle=222.42038;
 			id=39;
 		};
 		class Item39
@@ -947,7 +946,7 @@ class Mission
 			text="@STR_MAR_Car_Shop";
 			type="c_car";
 			colorName="ColorWhite";
-			angle=308.99844;
+			angle=308.99841;
 			id=55;
 			atlOffset=0.015213013;
 		};
@@ -1002,8 +1001,9 @@ class Mission
 			text="@STR_MAR_Diving_Shop";
 			type="mil_box";
 			colorName="ColorOrange";
-			angle=249.13788;
+			angle=249.13786;
 			id=60;
+			atlOffset=9.5367432e-007;
 		};
 		class Item60
 		{
@@ -1385,7 +1385,7 @@ class Mission
 		class Item97
 		{
 			dataType="Marker";
-			position[]={3244.9341,2.1102631,12960.808};
+			position[]={3244.9341,2.1102631,12959.418};
 			name="cop_car_1";
 			type="Empty";
 			angle=178.63142;
@@ -4950,6 +4950,7 @@ class Mission
 				angles[]={0,3.0901928,6.2826972};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -4957,7 +4958,6 @@ class Mission
 			};
 			id=282;
 			type="Land_CashDesk_F";
-			atlOffset=1.1842289;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -31486,6 +31486,7 @@ class Mission
 					};
 					id=991;
 					type="B_diver_F";
+					atlOffset=9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -31594,8 +31595,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3240.3093,2.1390429,12953.108};
-						angles[]={0.0013372133,1.5125442,6.2778587};
+						position[]={3238.3193,2.1638749,12972.627};
+						angles[]={0,2.2644575,0};
 					};
 					side="Civilian";
 					flags=4;
@@ -32021,6 +32022,7 @@ class Mission
 						angles[]={0,0.52220309,6.2820935};
 					};
 					side="Civilian";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -32028,7 +32030,6 @@ class Mission
 					};
 					id=1001;
 					type="B_RangeMaster_F";
-					atlOffset=0.47465515;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -32446,6 +32447,7 @@ class Mission
 						angles[]={0,0.0679636,6.2826972};
 					};
 					side="Civilian";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -32453,7 +32455,6 @@ class Mission
 					};
 					id=1008;
 					type="C_man_p_fugitive_F_asia";
-					atlOffset=1.2672386;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -32986,6 +32987,7 @@ class Mission
 						angles[]={0,2.0844855,6.2820935};
 					};
 					side="Civilian";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -32994,7 +32996,6 @@ class Mission
 					};
 					id=1017;
 					type="B_RangeMaster_F";
-					atlOffset=0.3791666;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -33168,6 +33169,7 @@ class Mission
 						angles[]={0,0.53849125,6.2823396};
 					};
 					side="Civilian";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -33175,7 +33177,6 @@ class Mission
 					};
 					id=1020;
 					type="C_man_1";
-					atlOffset=0.51165199;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -37174,7 +37175,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={20058.482,101.09652,6739.3877};
+						position[]={20058.875,101.0983,6739.5186};
 						angles[]={0,1.6410284,0.014660765};
 					};
 					side="Civilian";
@@ -37187,7 +37188,6 @@ class Mission
 					};
 					id=2424;
 					type="O_Soldier_F";
-					atlOffset=0.0039978027;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -46435,6 +46435,7 @@ class Mission
 			};
 			id=1792;
 			type="Land_LampStreet_F";
+			atlOffset=2.3841858e-007;
 		};
 		class Item1249
 		{
@@ -50297,7 +50298,7 @@ class Mission
 			position[]={9205.9258,14.547773,21678.193};
 			name="reb_v_1_3";
 			type="Empty";
-			angle=56.858418;
+			angle=56.858414;
 			id=2144;
 		};
 		class Item1459
@@ -52522,7 +52523,7 @@ class Mission
 			};
 			id=2580;
 			type="Land_LampHalogen_F";
-			atlOffset=-9.5367432e-007;
+			atlOffset=3.8146973e-006;
 		};
 		class Item1595
 		{
@@ -53057,7 +53058,7 @@ class Mission
 			};
 			id=2632;
 			type="RoadBarrier_F";
-			atlOffset=-0.0095558167;
+			atlOffset=-0.009554863;
 		};
 		class Item1626
 		{
@@ -55063,7 +55064,7 @@ class Mission
 			};
 			id=2828;
 			type="RoadBarrier_small_F";
-			atlOffset=0.013455153;
+			atlOffset=0.013478279;
 		};
 		class Item1745
 		{
@@ -55780,7 +55781,7 @@ class Mission
 			};
 			id=2879;
 			type="Land_LightHouse_F";
-			atlOffset=2.3841858e-007;
+			atlOffset=0.0013597012;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -55954,8 +55955,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3382.063,-2.2187502,12800.301};
-				angles[]={0,2.6820736,0};
+				position[]={3379.2476,-2.2187502,12790.651};
+				angles[]={0,3.102107,0};
 			};
 			side="Empty";
 			flags=1;
@@ -55965,15 +55966,15 @@ class Mission
 			};
 			id=2897;
 			type="Land_Pier_wall_F";
-			atlOffset=1.7503728;
+			atlOffset=1.95257;
 		};
 		class Item1792
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3404.9636,-2.2187502,12811.612};
-				angles[]={0,2.6840069,0};
+				position[]={3417.0315,-2.2187502,12787.461};
+				angles[]={0,3.3448298,0};
 			};
 			side="Empty";
 			flags=5;
@@ -55983,7 +55984,7 @@ class Mission
 			};
 			id=2898;
 			type="Land_Pier_wall_F";
-			atlOffset=-1.2781495;
+			atlOffset=-2.1111398;
 		};
 		class Item1793
 		{
@@ -56290,8 +56291,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={3392.365,5.4398518,12820.045};
-				angles[]={0,4.2754345,0};
+				position[]={3399.1531,5.4404149,12804.856};
+				angles[]={0,4.8240457,0};
 			};
 			side="Empty";
 			flags=5;
@@ -56386,6 +56387,7 @@ class Mission
 			};
 			id=2918;
 			type="Land_LampStreet_small_F";
+			atlOffset=0.00026512146;
 		};
 		class Item1808
 		{
@@ -56437,6 +56439,7 @@ class Mission
 			};
 			id=2921;
 			type="Land_LampStreet_small_F";
+			atlOffset=9.5367432e-007;
 		};
 		class Item1811
 		{
@@ -56556,6 +56559,7 @@ class Mission
 			};
 			id=2936;
 			type="Land_LampHalogen_F";
+			atlOffset=4.7683716e-007;
 		};
 		class Item1818
 		{
@@ -56590,6 +56594,703 @@ class Mission
 			};
 			id=2938;
 			type="Land_Pipe_fence_4m_F";
+		};
+		class Item1820
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12301.079,128.94852,8937.9346};
+				angles[]={0,5.3807168,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=2955;
+			type="Land_LampHalogen_F";
+		};
+		class Item1821
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12271.462,128.28346,8938.4492};
+				angles[]={0,4.4259715,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=2956;
+			type="Land_LampHalogen_F";
+		};
+		class Item1822
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12281.216,129.87245,8874.1221};
+				angles[]={0,2.3682404,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=2957;
+			type="Land_LampHalogen_F";
+			atlOffset=7.6293945e-006;
+		};
+		class Item1823
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12308.725,129.98213,8891.2568};
+				angles[]={0,0.31897837,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=2958;
+			type="Land_LampHalogen_F";
+		};
+		class Item1824
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12320.935,129.62424,8870.8506};
+				angles[]={0,0.26425788,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=2959;
+			type="Land_LampHalogen_F";
+		};
+		class Item1825
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={12295.236,129.33907,8852.54};
+				angles[]={0,1.7005801,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=2960;
+			type="Land_LampHalogen_F";
+			atlOffset=-8.392334e-005;
+		};
+		class Item1826
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={20082.195,105.98831,6708.8643};
+				angles[]={0,1.3771474,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=2961;
+			type="Land_LampHalogen_F";
+			atlOffset=-0.79415894;
+		};
+		class Item1827
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={20079.516,106.94936,6748.0767};
+				angles[]={0,5.7053738,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=2962;
+			type="Land_LampHalogen_F";
+		};
+		class Item1828
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={20109.379,106.06042,6726.8379};
+				angles[]={0,0.027713198,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=2963;
+			type="Land_LampHalogen_F";
+			atlOffset=2.2888184e-005;
+		};
+		class Item1829
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={20057.756,107.07532,6739.376};
+				angles[]={0,3.2916238,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=2964;
+			type="Land_LampHalogen_F";
+		};
+		class Item1830
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={20055.012,107.13663,6739.1919};
+				angles[]={0,5.1334672,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=2965;
+			type="Land_LampHalogen_F";
+			atlOffset=3.8146973e-005;
+		};
+		class Item1831
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={20091.994,105.2658,6696.6221};
+				angles[]={0,6.2764788,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=2966;
+			type="Land_LampHalogen_F";
+		};
+		class Item1832
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={20065.91,107.14076,6721.2139};
+				angles[]={0,5.5369244,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=2967;
+			type="Land_LampHalogen_F";
+			atlOffset=-0.00010681152;
+		};
+		class Item1833
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5503.2734,27.8036,14651.218};
+				angles[]={0,2.3585205,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=2968;
+			type="Land_LampHalogen_F";
+		};
+		class Item1834
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5512.8301,27.948641,14640.551};
+				angles[]={0,2.364552,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=2969;
+			type="Land_LampHalogen_F";
+		};
+		class Item1835
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5560.8018,28.701105,14640.459};
+				angles[]={0,0.4621658,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=2970;
+			type="Land_LampHalogen_F";
+			atlOffset=-5.7220459e-006;
+		};
+		class Item1836
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5555.1133,27.267939,14698.682};
+				angles[]={0,5.7803297,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=2971;
+			type="Land_LampHalogen_F";
+			atlOffset=-0.00013542175;
+		};
+		class Item1837
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5563.5654,27.514627,14688.133};
+				angles[]={0,5.6887465,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=2972;
+			type="Land_LampHalogen_F";
+			atlOffset=-0.00015830994;
+		};
+		class Item1838
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5530.6035,25.973635,14720.303};
+				angles[]={0,4.6988034,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=2973;
+			type="Land_LampHalogen_F";
+			atlOffset=-1.9073486e-006;
+		};
+		class Item1839
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5503.7134,25.801975,14693.117};
+				angles[]={0,3.3599799,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=2974;
+			type="Land_LampHalogen_F";
+		};
+		class Item1840
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5516.7319,27.946192,14654.237};
+				angles[]={0,5.504818,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=2975;
+			type="Land_LampHalogen_F";
+		};
+		class Item1841
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5550.8799,27.490667,14686.876};
+				angles[]={0,2.4034564,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=2976;
+			type="Land_LampHalogen_F";
+		};
+		class Item1842
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={5539.3911,27.730925,14666.916};
+				angles[]={0,0.85989094,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=2977;
+			type="Land_LampHalogen_F";
+		};
+		class Item1843
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4865.0186,24.314825,14395.008};
+				angles[]={0,2.0133271,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=2978;
+			type="Land_LampHalogen_F";
+		};
+		class Item1844
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4908.6899,22.916351,14411.148};
+				angles[]={0,0.59235859,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=2979;
+			type="Land_LampHalogen_F";
+		};
+		class Item1845
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4892.2827,22.037727,14440.986};
+				angles[]={0,5.0085263,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=2980;
+			type="Land_LampHalogen_F";
+		};
+		class Item1846
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4856.8394,23.387291,14415.227};
+				angles[]={0,3.4153731,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=2981;
+			type="Land_LampHalogen_F";
+		};
+		class Item1847
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4559.2598,263.77509,15458.479};
+				angles[]={0,2.4805624,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=2982;
+			type="Land_LampHalogen_F";
+		};
+		class Item1848
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4574.7075,262.58524,15457.581};
+				angles[]={0,1.4356985,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=2983;
+			type="Land_LampHalogen_F";
+		};
+		class Item1849
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4525.1582,269.11151,15442.104};
+				angles[]={0,3.7561498,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=2984;
+			type="Land_LampHalogen_F";
+			atlOffset=-0.0007019043;
+		};
+		class Item1850
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4509.686,266.6832,15405.449};
+				angles[]={0,3.3873024,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=2985;
+			type="Land_LampHalogen_F";
+			atlOffset=-0.0002746582;
+		};
+		class Item1851
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4524.0063,264.73004,15368.184};
+				angles[]={0,2.4726591,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=2986;
+			type="Land_LampHalogen_F";
+			atlOffset=-0.00039672852;
+		};
+		class Item1852
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4546.4834,265.98441,15355.436};
+				angles[]={0,1.6715574,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=2987;
+			type="Land_LampHalogen_F";
+			atlOffset=-0.00036621094;
+		};
+		class Item1853
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4579.8535,264.65714,15356.225};
+				angles[]={0,1.0664421,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=2988;
+			type="Land_LampHalogen_F";
+			atlOffset=-0.0007019043;
+		};
+		class Item1854
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4600.811,263.02042,15379.897};
+				angles[]={0,0.42015526,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=2989;
+			type="Land_LampHalogen_F";
+			atlOffset=0.00033569336;
+		};
+		class Item1855
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4609.1777,263.3941,15414.514};
+				angles[]={0,6.1524148,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=2990;
+			type="Land_LampHalogen_F";
+			atlOffset=-0.00073242188;
+		};
+		class Item1856
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4601.1309,261.00482,15444.919};
+				angles[]={0,5.6525521,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=2991;
+			type="Land_LampHalogen_F";
+			atlOffset=0.0001373291;
+		};
+		class Item1857
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4555.731,268.96478,15405.383};
+				angles[]={0,5.8078723,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=2992;
+			type="Land_LampHalogen_F";
+		};
+		class Item1858
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4567.7388,267.5892,15430.376};
+				angles[]={0,6.0500603,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				init="this allowDamage false;";
+			};
+			id=2993;
+			type="Land_LampHalogen_F";
+		};
+		class Item1859
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={3240.1709,3.4999838,12972.256};
+				angles[]={0,5.7884703,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=2994;
+			type="Land_FuelStation_Build_F";
 		};
 	};
 };
