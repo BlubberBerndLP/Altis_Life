@@ -9,7 +9,7 @@ class Maverick_ConvoySidemission
 	{
 		ConfigPool[] 							= {"GoldBarTransport"};
 		ForceConfigAtIndex 						= -1;
-		SleepTime								= 120;
+		SleepTime								= 300;
 		MakePlayersHostileFor					= 180;
 		SidesNotAttackable[]					= {"WEST"};
 		AIDifficulty[] = {
@@ -74,7 +74,7 @@ class Maverick_ConvoySidemission
 				vehiclesSpawnMarkersInOrder[]	= {"fritzi_convoy_spawn1","fritzi_convoy_spawn2","fritzi_convoy_spawn3"};
 				vehiclesInheritDirection		= 1;
 				mainVehicleAtIndex				= 1;
-				maxSpeed						= 50;
+				maxSpeed						= 30;
 				removeVehiclesAfterSeconds		= 600;
 				additionalUnitsAmount			= 10;
 			};
@@ -143,7 +143,7 @@ class Maverick_ConvoySidemission
 				vehiclesSpawnMarkersInOrder[]	= {"fritzi_convoy_spawn1","fritzi_convoy_spawn2","fritzi_convoy_spawn3","fritzi_convoy_spawn4"};
 				vehiclesInheritDirection		= 1;
 				mainVehicleAtIndex				= 2;
-				maxSpeed						= 50;
+				maxSpeed						= 30;
 				removeVehiclesAfterSeconds		= 600;
 				additionalUnitsAmount			= 10;
 			};
