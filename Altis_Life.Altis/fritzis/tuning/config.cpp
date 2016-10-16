@@ -81,12 +81,12 @@ class Maverick_Tuning
 					displayText = "Zeige / Verstecke Construction";
 					price = 4000;
 				};
-				/*class HideServices
+			    class HideServices
 				{
 					parts[] = {"HideServices"};
 					displayText = "Hide/Show Service Lights";
 					price = 20000;
-				};*/
+				};
 			};
 			class Colors
 			{
