@@ -70,7 +70,7 @@ class Maverick_ConvoySidemission
 			class Vehicles
 			{
 				// Vehicle configuration
-				vehiclesInOrder[]				= {"C_Van_01_fuel_F","C_Van_01_fuel_F","C_Van_01_fuel_F"};
+				vehiclesInOrder[]				= {"B_MRAP_01_F","O_Truck_03_ammo_F","B_MRAP_01_F"};
 				vehiclesSpawnMarkersInOrder[]	= {"fritzi_convoy_spawn1","fritzi_convoy_spawn2","fritzi_convoy_spawn3"};
 				vehiclesInheritDirection		= 1;
 				mainVehicleAtIndex				= 1;
@@ -139,7 +139,7 @@ class Maverick_ConvoySidemission
 			class Vehicles
 			{
 				// Vehicle configuration
-				vehiclesInOrder[]				= {"O_T_LSV_02_armed_F","O_T_LSV_02_unarmed_F","O_T_Truck_03_ammo_ghex_F","O_T_LSV_02_unarmed_F"};
+				vehiclesInOrder[]				= {"O_T_LSV_02_armed_F","O_MRAP_02_F","O_Truck_02_Ammo_F","O_MRAP_02_F"};
 				vehiclesSpawnMarkersInOrder[]	= {"fritzi_convoy_spawn1","fritzi_convoy_spawn2","fritzi_convoy_spawn3","fritzi_convoy_spawn4"};
 				vehiclesInheritDirection		= 1;
 				mainVehicleAtIndex				= 2;
