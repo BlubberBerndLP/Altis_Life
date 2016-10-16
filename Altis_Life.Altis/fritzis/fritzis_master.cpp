@@ -1,3 +1,4 @@
+#include "convoy-sidemission\config.cpp"
 #include "introcam\config.cpp"
 #include "tuning\config.cpp"
 class CfgMusic {
