@@ -12,7 +12,7 @@ scriptName "fn_getTuningFromDB";
 _vehicleID = param[0,-1,[-1]];
 _vehicle = param[1,objNull,[objNull]];
 _delay = param[2,0,[0]];
-if (!isServer) exitWith {};
+if (!isServer && hasInterface) exitWith {};
 if (_vehicleID == -1) exitWith {};
 
 sleep _delay;

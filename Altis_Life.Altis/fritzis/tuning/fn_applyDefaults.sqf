@@ -40,7 +40,7 @@ _mav_tuning_defaultData = getArray(missionConfigFile >> "Maverick_Tuning" >> "Ve
 		if (true) then {
 			_mat = (getObjectMaterials _veh) select 0;
 			if (_mat == "") then {
-				_mat = "fritzis\tuning\bin\materials\default.rvmat";
+				_mat = "maverick\tuning\bin\materials\default.rvmat";
 			};
 			_mav_tuning_defaultData set [5, _mat];
 		};
