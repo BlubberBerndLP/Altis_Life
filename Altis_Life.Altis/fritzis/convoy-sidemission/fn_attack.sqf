@@ -109,7 +109,7 @@ if (_convoyCannotContinue) exitWith {
 	};
 } forEach _groups;
 
-for [{_loop = 0},{_loop < (count _groups)},{_loop = _loop + 1}] do {
+/*for [{_loop = 0},{_loop < (count _groups)},{_loop = _loop + 1}] do {
 	_group = _groups select _loop;
 	if (count units _group > 0) then {
 		_units = units _group;
@@ -135,7 +135,41 @@ for [{_loop = 0},{_loop < (count _groups)},{_loop = _loop + 1}] do {
 		};
 	};
 	sleep 0.1;
-};
+};*/
+
+{
+	_vehicle = ((units _x) select 0) getVariable ["mav_convoy_myvehicle", objNull];
+
+	while {isNull (leader _x)} do {
+		_x selectLeader (selectRandom (units _x));
+		sleep 1;
+	};
+
+	[units _x] allowGetIn true;
+
+	(leader _x) assignAsDriver _vehicle;
+	[leader _x] orderGetIn true;
+	(leader _x) moveInDriver _vehicle;
+
+	_group = _x;
+	_veh = _vehicle;
+	_vehicle lockDriver false;
+	_vehPosMrkr = createMarkerLocal [format ["mrkr_%1",_veh],getPos _veh];
+	_vehPosMrkr setMarkerTypeLocal "Empty";
+	_vehPosMrkrPos = getMarkerPos _vehPosMrkr;
+	_wp = _group addWayPoint [_vehPosMrkrPos,20];
+	_wp setWaypointType "MOVE";
+	_wp setWaypointSpeed "FULL";
+	_wp1 = _group addWayPoint [_vehPosMrkrPos,20];
+	_wp1 setWaypointType "GETIN NEAREST";
+	_wp1 setWaypointSpeed "FULL";
+	_wp2 = _group addWayPoint [_vehPosMrkrPos,20];
+	_wp2 setWaypointType "HOLD";
+	_wp2 setWaypointSpeed "LIMITED";
+	_units allowGetIn true;
+
+	systemChat format["Getin ordered for %1 into %2", _x, _vehicle];
+} forEach _groups;
 
 // Experimental wait until all units are in their vehicles
 _loop = true;
