@@ -130,6 +130,23 @@ switch (_code) do {
             };
         };
     };
+	
+	case 76:
+	{
+			if(_shift) then {_handled = true;};
+			if((_shift) && (vehicle player == player)) then
+	{
+			[] spawn {
+				player playMove "Acts_AidlPercMstpSlowWrflDnon_pissing";
+				[player,"piss"] call life_fnc_globalSound;
+				sleep 8;
+				_pipi = "Oil_Spill_F" createVehicle (getPos player);
+				_pipi setPos (getPos player);
+				sleep 40;
+				deleteVehicle _pipi;
+		};
+	};
+};
 
     //T Key (Trunk)
     case 20: {
