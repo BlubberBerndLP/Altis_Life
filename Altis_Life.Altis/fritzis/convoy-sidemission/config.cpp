@@ -56,15 +56,15 @@ class Maverick_ConvoySidemission
 
 				// Mission started announcement
 				startAnnouncementHeader			= "Gold Transport";
-				startAnnouncementDescription	= "The Federal Reserve's guarded transporter is currently moving larger amounts of gold.";
+				startAnnouncementDescription	= "Der bewachte Transporter der Zentralbank bewegt derzeit größere Mengen an Gold.";
 
 				// Mission objective completed
-				stoppedAnnouncementHeader		= "Gold Transporter disabled";
-				stoppedAnnouncementDescription	= "The gold transporter has been disabled.";
+				stoppedAnnouncementHeader		= "Gold Transporter ausgeschaltet";
+				stoppedAnnouncementDescription	= "Der Goldtransporter wurde ausgeschaltet.";
 
 				// Mission completed announcement
-				endAnnouncementHeader			= "Gold Transport ended";
-				endAnnouncementDescription  	= "The mission has ended.";
+				endAnnouncementHeader			= "Gold Transport beendet";
+				endAnnouncementDescription  	= "Die Mission wurde beendet.";
 			};
 
 			class Vehicles
@@ -124,16 +124,16 @@ class Maverick_ConvoySidemission
 				enabled							= 1;
 
 				// Mission started announcement
-				startAnnouncementHeader			= "Weapon Transport";
-				startAnnouncementDescription	= "The local army is currently transporting larger amounts of weapons through Tanoa with ground vehicles.";
+				startAnnouncementHeader			= "Waffentransport";
+				startAnnouncementDescription	= "Die Armee transportiert derzeit größere Mengen an Waffen durch Altis.";
 
 				// Mission objective completed
-				stoppedAnnouncementHeader		= "Weapon Transporter disabled";
-				stoppedAnnouncementDescription	= "The Weapon transporter has been disabled.";
+				stoppedAnnouncementHeader		= "Waffentransporter ausgeschaltet";
+				stoppedAnnouncementDescription	= "Der Waffentransporter wurde ausgeschaltet.";
 
 				// Mission completed announcement
-				endAnnouncementHeader			= "Weapon Transport ended";
-				endAnnouncementDescription  	= "The mission has ended.";
+				endAnnouncementHeader			= "Waffentransport beendet";
+				endAnnouncementDescription  	= "Die Mission wurde beendet.";
 			};
 
 			class Vehicles
