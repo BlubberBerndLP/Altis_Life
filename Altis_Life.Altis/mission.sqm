@@ -8,7 +8,7 @@ class EditorData
 	toggles=1545;
 	class ItemIDProvider
 	{
-		nextID=3135;
+		nextID=3136;
 	};
 	class MarkerIDProvider
 	{
@@ -109,13 +109,14 @@ addons[]=
 	"A3_Structures_F_Items_Stationery",
 	"A3_Structures_F_Bootcamp_Items_Electronics",
 	"A3_Structures_F_EPC_Items_Electronics",
-	"A3_Props_F_Exp_A_Military_Equipment"
+	"A3_Props_F_Exp_A_Military_Equipment",
+	"A3_Modules_F_Curator_Curator"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=28;
+		items=29;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -312,6 +313,13 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
+		class Item28
+		{
+			className="A3_Modules_F_Curator";
+			name="Arma 3 Zeus Update - Scripted Modules";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
 	};
 };
 randomSeed=2639488;
@@ -346,24 +354,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -378,6 +368,24 @@ class CustomAttributes
 						};
 					};
 					value=1;
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
 				};
 			};
 		};
@@ -439,7 +447,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=1976;
+		items=1977;
 		class Item0
 		{
 			dataType="Marker";
@@ -517,7 +525,6 @@ class Mission
 			type="Empty";
 			angle=297.1044;
 			id=9;
-			atlOffset=0.45309353;
 		};
 		class Item9
 		{
@@ -599,7 +606,7 @@ class Mission
 			type="mil_box";
 			colorName="Color4_FD_F";
 			id=17;
-			atlOffset=0.44947624;
+			atlOffset=9.5367432e-007;
 		};
 		class Item17
 		{
@@ -826,7 +833,7 @@ class Mission
 			position[]={3638.1335,10.199409,13160.578};
 			name="civ_car_1";
 			type="Empty";
-			angle=222.42035;
+			angle=222.42033;
 			id=39;
 		};
 		class Item39
@@ -32062,6 +32069,7 @@ class Mission
 						angles[]={0,0.52220309,6.2820935};
 					};
 					side="Civilian";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -32069,7 +32077,6 @@ class Mission
 					};
 					id=1001;
 					type="B_RangeMaster_F";
-					atlOffset=0.47465515;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -33027,6 +33034,7 @@ class Mission
 						angles[]={0,2.0844855,6.2820935};
 					};
 					side="Civilian";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -33035,7 +33043,6 @@ class Mission
 					};
 					id=1017;
 					type="B_RangeMaster_F";
-					atlOffset=0.3791666;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -50338,7 +50345,7 @@ class Mission
 			position[]={9205.9258,14.547773,21678.193};
 			name="reb_v_1_3";
 			type="Empty";
-			angle=56.858406;
+			angle=56.858402;
 			id=2144;
 		};
 		class Item1459
@@ -58976,7 +58983,7 @@ class Mission
 			position[]={4506.9893,13.035156,12608.319};
 			name="fritzi_convoy_waypoint1";
 			type="Empty";
-			angle=15.172282;
+			angle=15.172281;
 			id=3118;
 			atlOffset=-28.427517;
 		};
@@ -58986,7 +58993,7 @@ class Mission
 			position[]={4759.5513,-1.1826738e+016,13437.147};
 			name="fritzi_convoy_waypoint2";
 			type="Empty";
-			angle=52.910732;
+			angle=52.910728;
 			id=3119;
 			atlOffset=-1.1826738e+016;
 		};
@@ -59026,7 +59033,7 @@ class Mission
 			position[]={6134.4028,-7.9405747e+008,15652.485};
 			name="fritzi_convoy_waypoint6";
 			type="Empty";
-			angle=50.495548;
+			angle=50.495544;
 			id=3123;
 			atlOffset=-7.9405754e+008;
 		};
@@ -59036,19 +59043,18 @@ class Mission
 			position[]={6541.2031,-2.8455561e+011,16156.457};
 			name="fritzi_convoy_waypoint7";
 			type="Empty";
-			angle=94.235992;
+			angle=94.235985;
 			id=3124;
 			atlOffset=-2.8455561e+011;
 		};
 		class Item1966
 		{
 			dataType="Marker";
-			position[]={6763.4009,-1.5195406e-016,16228.092};
+			position[]={6763.4453,77.437378,16228.425};
 			name="fritzi_convoy_waypoint8";
 			type="Empty";
 			angle=183.81398;
 			id=3125;
-			atlOffset=-77.398911;
 		};
 		class Item1967
 		{
@@ -59063,7 +59069,7 @@ class Mission
 		class Item1968
 		{
 			dataType="Marker";
-			position[]={8711.835,-2.8455561e+011,15930.883};
+			position[]={8128.98,-2.8455561e+011,15908.673};
 			name="fritzi_convoy_waypoint10";
 			type="Empty";
 			angle=122.107;
@@ -59076,7 +59082,7 @@ class Mission
 			position[]={9851.3047,-7.9405747e+008,15984.088};
 			name="fritzi_convoy_waypoint11";
 			type="Empty";
-			angle=92.092903;
+			angle=92.092896;
 			id=3128;
 			atlOffset=-7.940576e+008;
 		};
@@ -59096,7 +59102,7 @@ class Mission
 			position[]={14508.996,-8.0322458e+009,16903.23};
 			name="fritzi_convoy_waypoint13";
 			type="Empty";
-			angle=43.251995;
+			angle=43.251991;
 			id=3130;
 			atlOffset=-8.0322458e+009;
 		};
@@ -59106,7 +59112,7 @@ class Mission
 			position[]={4501.5327,-0.390625,12575.653};
 			name="fritzi_convoy_spawn1";
 			type="Empty";
-			angle=9.7470627;
+			angle=9.7470617;
 			id=3131;
 			atlOffset=-45.589146;
 		};
@@ -59134,9 +59140,119 @@ class Mission
 			position[]={4383.248,-7.3506978e-009,12418.032};
 			name="fritzi_convoy_spawn4";
 			type="Empty";
-			angle=49.801994;
+			angle=49.801991;
 			id=3134;
 			atlOffset=-54.197552;
+		};
+		class Item1976
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={142.2738,0.17279272,2483.0293};
+			};
+			id=3135;
+			type="ModuleCurator_F";
+			atlOffset=186.14279;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleCurator_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="#adminLogged ";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleCurator_F_Forced";
+					expression="_this setVariable ['Forced',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleCurator_F_Name";
+					expression="_this setVariable ['Name',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleInfo";
+					expression="false";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ModuleCurator_F_Addons";
+					expression="_this setVariable ['Addons',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=2;
+						};
+					};
+				};
+				nAttributes=5;
+			};
 		};
 	};
 };
