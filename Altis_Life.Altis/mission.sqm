@@ -346,24 +346,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -378,6 +360,24 @@ class CustomAttributes
 						};
 					};
 					value=1;
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
 				};
 			};
 		};
@@ -45870,7 +45870,7 @@ class Mission
 			};
 			id=1792;
 			type="Land_LampStreet_F";
-			atlOffset=-0.021350145;
+			atlOffset=-0.021350384;
 		};
 		class Item1214
 		{
@@ -58375,11 +58375,11 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={142.2738,0.17279272,2483.0293};
+				position[]={142.274,0.17300415,2483.0291};
 			};
 			id=3135;
 			type="ModuleCurator_F";
-			atlOffset=186.14279;
+			atlOffset=186.14301;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -58397,7 +58397,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="#adminLogged ";
+							value="cop_1";
 						};
 					};
 				};
@@ -58473,7 +58473,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=2;
+							value=3;
 						};
 					};
 				};
@@ -58620,6 +58620,7 @@ class Mission
 			};
 			id=3179;
 			type="Land_CncBarrier_stripes_F";
+			atlOffset=-1.7166138e-005;
 		};
 		class Item1942
 		{
@@ -60019,7 +60020,7 @@ class Mission
 			};
 			id=3303;
 			type="Land_HBarrier_5_F";
-			atlOffset=1.8927617;
+			atlOffset=1.8927619;
 		};
 	};
 };
