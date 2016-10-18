@@ -16,8 +16,8 @@ if (life_blacklisted) exitWith {
     sleep 30;
 };
 
-if (!(str(player) in ["cop_9999"])) then {
-    if ((FETCH_CONST(life_coplevel) isEqualTo 0) && (FETCH_CONST(life_adminlevel) isEqualTo 0)) then {
+if (!(str(player) in ["cop_1"])) then {
+    if ((FETCH_CONST(life_coplevel) isEqualTo 7) && (FETCH_CONST(life_adminlevel) isEqualTo 5)) then {
         ["NotWhitelisted",false,true] call BIS_fnc_endMission;
         sleep 35;
     };
