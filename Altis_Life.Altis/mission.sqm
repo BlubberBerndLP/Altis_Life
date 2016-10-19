@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3671.3811,218.18768,13027.087};
-		dir[]={-0.63365614,-0.76898646,-0.08589685};
-		up[]={-0.76216459,0.63907599,-0.10331938};
-		aside[]={-0.13434972,-1.5153782e-006,0.9910481};
+		pos[]={3641.6438,122.73662,12974.698};
+		dir[]={0.74238425,-0.66237313,-0.10181554};
+		up[]={0.65643358,0.74898487,-0.090025529};
+		aside[]={-0.13588443,-6.4074993e-007,-0.99083877};
 	};
 };
 binarizationWanted=0;
@@ -346,24 +346,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -378,6 +360,24 @@ class CustomAttributes
 						};
 					};
 					value=1;
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
 				};
 			};
 		};
@@ -412,7 +412,7 @@ class Mission
 {
 	class Intel
 	{
-		briefingName="Altis Life RPG v5.0.0";
+		briefingName="Altis Life RPG v4.5";
 		overviewText="@STR_MISC_overviewText";
 		timeOfChanges=10800;
 		startWeather=0.099999994;
@@ -517,6 +517,7 @@ class Mission
 			type="Empty";
 			angle=297.1044;
 			id=9;
+			atlOffset=0.45309353;
 		};
 		class Item9
 		{
@@ -598,7 +599,7 @@ class Mission
 			type="mil_box";
 			colorName="Color4_FD_F";
 			id=17;
-			atlOffset=9.5367432e-007;
+			atlOffset=0.44947624;
 		};
 		class Item17
 		{
@@ -4989,7 +4990,6 @@ class Mission
 				angles[]={0,3.0901928,6.2826972};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -4997,6 +4997,7 @@ class Mission
 			};
 			id=282;
 			type="Land_CashDesk_F";
+			atlOffset=1.1842289;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -23215,13 +23216,13 @@ class Mission
 				angles[]={0,6.0063586,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
 			};
 			id=751;
 			type="Land_CashDesk_F";
+			atlOffset=0.3939209;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -23262,6 +23263,7 @@ class Mission
 			};
 			id=752;
 			type="Land_CashDesk_F";
+			atlOffset=0.18852997;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -23504,6 +23506,7 @@ class Mission
 			};
 			id=758;
 			type="Land_CashDesk_F";
+			atlOffset=0.19405365;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -32061,7 +32064,6 @@ class Mission
 						angles[]={0,0.52220309,6.2820935};
 					};
 					side="Civilian";
-					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -32069,6 +32071,7 @@ class Mission
 					};
 					id=1001;
 					type="B_RangeMaster_F";
+					atlOffset=0.47465515;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -32486,7 +32489,6 @@ class Mission
 						angles[]={0,0.0679636,6.2826972};
 					};
 					side="Civilian";
-					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -32494,6 +32496,7 @@ class Mission
 					};
 					id=1008;
 					type="C_man_p_fugitive_F_asia";
+					atlOffset=1.2672386;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -33026,7 +33029,6 @@ class Mission
 						angles[]={0,2.0844855,6.2820935};
 					};
 					side="Civilian";
-					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -33035,6 +33037,7 @@ class Mission
 					};
 					id=1017;
 					type="B_RangeMaster_F";
+					atlOffset=0.3791666;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -33208,7 +33211,6 @@ class Mission
 						angles[]={0,0.53849125,6.2823396};
 					};
 					side="Civilian";
-					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -33216,6 +33218,7 @@ class Mission
 					};
 					id=1020;
 					type="C_man_1";
+					atlOffset=0.51165199;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -35919,7 +35922,6 @@ class Mission
 						angles[]={0,2.8397205,0};
 					};
 					side="Civilian";
-					flags=4;
 					class Attributes
 					{
 						init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_MAR_Station_Shop"",life_fnc_weaponShopMenu,""f_station_store""];this addAction[localize""STR_Shop_Station_Coffee"",life_fnc_virt_menu,""f_station_coffee""];";
@@ -35927,6 +35929,7 @@ class Mission
 					};
 					id=1075;
 					type="C_Nikos_aged";
+					atlOffset=0.42167664;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -35987,6 +35990,7 @@ class Mission
 					};
 					id=1077;
 					type="C_Nikos_aged";
+					atlOffset=0.19090271;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -36347,6 +36351,7 @@ class Mission
 					};
 					id=1089;
 					type="C_Nikos_aged";
+					atlOffset=0.20879364;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -58262,7 +58267,7 @@ class Mission
 			position[]={6169.1294,-7.9405747e+008,15681.221};
 			name="fritzi_convoy_waypoint6";
 			type="Empty";
-			angle=144.25529;
+			angle=144.25528;
 			id=3123;
 			atlOffset=-7.9405754e+008;
 		};
@@ -58282,7 +58287,7 @@ class Mission
 			position[]={6781.0659,77.437378,15507.473};
 			name="fritzi_convoy_waypoint8";
 			type="Empty";
-			angle=357.78906;
+			angle=357.78903;
 			id=3125;
 			atlOffset=37.497242;
 		};
@@ -60029,116 +60034,110 @@ class Mission
 		class Item2022
 		{
 			dataType="Trigger";
-			position[]={3335.0852,2.0130005,12961.688};
+			position[]={3335.085,2.0133049,12961.688};
 			angle=0.90603518;
 			class Attributes
 			{
 				onActivation="s1 animate [""Door_1_rot"", 1]";
 				onDeactivation="s1 animate [""Door_1_rot"", 0]";
-				sizeA=3.6269536;
-				sizeB=5.6716771;
+				sizeA=3.6270001;
+				sizeB=5.6719999;
 				repeatable=1;
 				activationBy="WEST";
-				effectSound="FD_Start_F";
 			};
 			id=3304;
 			type="EmptyDetector";
-			atlOffset=-0.043273926;
+			atlOffset=-0.042999983;
 		};
 		class Item2023
 		{
 			dataType="Trigger";
-			position[]={3347.9487,2.4010944,12974.29};
-			angle=3.757257;
+			position[]={3347.949,2.4009745,12974.29};
+			angle=3.7572575;
 			class Attributes
 			{
 				onActivation="s2 animate [""Door_1_rot"", 1]";
 				onDeactivation="s2 animate [""Door_1_rot"", 0]";
 				sizeA=3.5510001;
-				sizeB=5.3296275;
+				sizeB=5.3299999;
 				repeatable=1;
 				activationBy="WEST";
-				effectSound="FD_Start_F";
 			};
 			id=3306;
 			type="EmptyDetector";
-			atlOffset=-0.015884399;
+			atlOffset=-0.016000032;
 		};
 		class Item2024
 		{
 			dataType="Trigger";
-			position[]={3348.2063,2.3918116,12974.06};
+			position[]={3348.2061,2.3913548,12974.06};
 			angle=0.63337988;
 			class Attributes
 			{
 				onActivation="s2 animate [""Door_1_rot"", 1]";
 				onDeactivation="s2 animate [""Door_1_rot"", 0]";
 				sizeA=3.5510001;
-				sizeB=5.2712541;
+				sizeB=5.2709999;
 				repeatable=1;
 				activationBy="GUER";
-				effectSound="FD_Start_F";
 			};
 			id=3308;
 			type="EmptyDetector";
-			atlOffset=-0.014539242;
+			atlOffset=-0.015000105;
 		};
 		class Item2025
 		{
 			dataType="Trigger";
-			position[]={3335.1736,2.008606,12961.536};
+			position[]={3335.1741,2.008239,12961.536};
 			angle=0.90603518;
 			class Attributes
 			{
 				onActivation="s1 animate [""Door_1_rot"", 1]";
 				onDeactivation="s1 animate [""Door_1_rot"", 0]";
-				sizeA=3.627167;
-				sizeB=5.7445288;
+				sizeA=3.6270001;
+				sizeB=5.7449999;
 				repeatable=1;
 				activationBy="GUER";
-				effectSound="FD_Start_F";
 			};
 			id=3311;
 			type="EmptyDetector";
-			atlOffset=-0.042633057;
+			atlOffset=-0.042999983;
 		};
 		class Item2026
 		{
 			dataType="Trigger";
-			position[]={3724.1855,18.697323,12995.82};
-			angle=1.5623485;
+			position[]={3724.186,18.697327,12995.82};
+			angle=1.5623488;
 			class Attributes
 			{
 				onActivation="s3 animate [""Door_1_rot"", 1]";
 				onDeactivation="s3 animate [""Door_1_rot"", 0]";
 				sizeA=3.5510001;
-				sizeB=6.0308199;
+				sizeB=6.0310001;
 				repeatable=1;
 				activationBy="GUER";
-				effectSound="FD_Start_F";
 			};
 			id=3313;
 			type="EmptyDetector";
-			atlOffset=0.019002914;
+			atlOffset=0.019001007;
 		};
 		class Item2027
 		{
 			dataType="Trigger";
-			position[]={3724.1941,18.677019,12995.958};
-			angle=1.5623484;
+			position[]={3724.1941,18.677374,12995.958};
+			angle=1.5623488;
 			class Attributes
 			{
 				onActivation="s3 animate [""Door_1_rot"", 1]";
 				onDeactivation="s3 animate [""Door_1_rot"", 0]";
 				sizeA=3.5510001;
-				sizeB=6.0186353;
+				sizeB=6.0190001;
 				repeatable=1;
 				activationBy="WEST";
-				effectSound="FD_Start_F";
 			};
 			id=3315;
 			type="EmptyDetector";
-			atlOffset=0.0026473999;
+			atlOffset=0.0030021667;
 		};
 	};
 };
