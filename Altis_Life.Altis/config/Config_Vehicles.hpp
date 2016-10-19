@@ -510,7 +510,7 @@ class LifeCfgVehicles {
                 "#(argb,8,8,3)color(0.6,0.3,0.01,1)"
             } },
             { "Polizei", "cop", {
-                "skin\offroader\polizei_offroad.jpg"
+                "skin\offroader\polizei_offroad.paa"
             } }
         };
     };
@@ -681,11 +681,11 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "Orange", "civ", {
                 "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_04_co.paa"
             } },
-			{ "Admin", "admin", {
-                "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_04_co.paa"
-            } },
             { "Police", "cop", {
                 "skin\suv\bullensuv.paa"
+            } },
+			{ "Zoll", "cop", {
+                "skin\suv\ZOLL.paa"
             } }
         };
     };
@@ -723,7 +723,15 @@ will modify the virtual space and the price of the vehicle, but other informatio
         licenses[] = { {""}, {""}, {""}, {""} };
         price = 30000;
         textures[] = {
-            { "Black", "cop", {
+            { "Polizei", "cop", {
+                "skin\hunter\bullen_hunter1.paa",
+                "skin\hunter\bullen_hunter2.paa"
+            } },
+			{ "Zoll", "cop", {
+                "skin\hunter\zoll_hunter1.paa",
+                "skin\hunter\bullen_hunter2.paa"
+            } },
+			{ "Black", "cop", {
                 "skin\hunter\bwh1.jpg",
                 "skin\hunter\bwh2.jpg"
             } }
