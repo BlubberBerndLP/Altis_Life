@@ -2,7 +2,6 @@
 /*
     File: fn_handleItem.sqf
     Author: Bryan "Tonic" Boardwine
-
     Description
     Main gear handling functionality.
 */
@@ -100,8 +99,7 @@ if (_bool) then {
                                 if (_item in (assignedItems  player)) then {
                                     player addItem _item;
                                 } else {
-                                    player addItem _item;
-                                    player assignItem _item;
+                                    player linkItem _item;
                                 };
                             };
                         };
@@ -339,8 +337,7 @@ if (_bool) then {
                             if (_override) then {
                                 player addItem _item;
                             } else {
-                                player addItem _item;
-                                player assignItem _item;
+                                player linkItem _item;
                             };
                         };
                     };
@@ -352,8 +349,7 @@ if (_bool) then {
                             if (_override) then {
                                 player addItem _item;
                             } else {
-                                player addItem _item;
-                                player assignItem _item;
+                                player linkItem _item;
                             };
                         };
                     };
