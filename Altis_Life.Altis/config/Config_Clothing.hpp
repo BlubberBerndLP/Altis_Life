@@ -91,7 +91,7 @@ class Clothing {
             { "G_Lady_Blue", "", 150, { "", "", -1 } }
         };
         vests[] = {
-            { "NONE", "Remove Vest", 0, { "", "", -1 } }
+            { "NONE", "Remove Vest", 0, { "", "", -1 } },
 			{ "V_Press_F", "", 500, { "", "", -1 } }
         };
         backpacks[] = {

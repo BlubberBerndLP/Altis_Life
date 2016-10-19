@@ -738,10 +738,6 @@ will modify the virtual space and the price of the vehicle, but other informatio
 			{ "Zoll", "cop", {
                 "skin\hunter\zoll_hunter1.paa",
                 "skin\hunter\bullen_hunter2.paa"
-            } },
-			{ "Black", "cop", {
-                "skin\hunter\bwh1.jpg",
-                "skin\hunter\bwh2.jpg"
             } }
         };
     };
