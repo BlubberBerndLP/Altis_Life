@@ -363,7 +363,12 @@ class LifeCfgVehicles {
         vItemSpace = 200;
         licenses[] = { {""}, {"cAir"}, {""}, {""} };
         price = 200000;
-        textures[] = {};
+        textures[] = {
+			{ "Polizei", "cop", {
+                "skin\ghost\polizei_ghost1.jpg",
+				"skin\ghost\polizei_ghost2.jpg"
+            } }
+		};
     };
 
     class B_MRAP_01_hmg_F {
