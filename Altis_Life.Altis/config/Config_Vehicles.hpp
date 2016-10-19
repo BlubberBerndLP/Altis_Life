@@ -681,9 +681,12 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "Orange", "civ", {
                 "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_04_co.paa"
             } },
+			{ "Admin", "admin", {
+                "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_04_co.paa"
+            } },
             { "Police", "cop", {
                 "skin\suv\bullensuv.paa"
-            } },
+            } }
         };
     };
 
