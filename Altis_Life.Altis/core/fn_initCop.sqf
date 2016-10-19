@@ -2,7 +2,6 @@
 /*
     File: fn_initCop.sqf
     Author: Bryan "Tonic" Boardwine
-
     Description:
     Cop Initialization file.
 */
@@ -16,8 +15,8 @@ if (life_blacklisted) exitWith {
     sleep 30;
 };
 
-if (!(str(player) in ["cop_1"])) then {
-    if ((FETCH_CONST(life_coplevel) < 6) && (FETCH_CONST(life_adminlevel) < 4)) then {
+if (!(str(player) in ["cop_9999"])) then {
+    if ((FETCH_CONST(life_coplevel) isEqualTo 0) && (FETCH_CONST(life_adminlevel) isEqualTo 0)) then {
         ["NotWhitelisted",false,true] call BIS_fnc_endMission;
         sleep 35;
     };
