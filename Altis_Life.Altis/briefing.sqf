@@ -32,7 +32,7 @@ player createDiarySubject ["controls","Steuerung"];
 	
 	player createDiaryRecord["changelog",
 		[
-			"SealDrop Changelog",
+			"meinaltis Changelog",
 				"
 					Das Changelog kannst du unter meinaltis.de einsehen.
 				"
