@@ -25,7 +25,7 @@ _textSpoiler = _display displayCtrl 1101;
 _text2 = _display displayCtrl 1102;
 
 _message = "";
-_message = _message + "<t align='center' size='8' shadow='0'><img image='textures\meinaltis.jpg' /></t><br /><br />";
+_message = _message + "<t align='center' size='5' shadow='0'><img image='textures\meinaltis.jpg' /></t><br /><br />";
 _message = _message + "Nützliche Links (Klicke auf die Links um sie im Browser zu öffnen.)<br /><br />";
 _message = _message + " <a href='https://blackwater-clan.com' color='#56BDD6'>Webseite</a> -- Unsere Webseite.<br /><br />";
 _message = _message + "<a href='ts3server://ts.blackwater-clan.com/?port=9987' color='#56BDD6'>Teamspeak: meinaltis.de</a><br /><br />";
