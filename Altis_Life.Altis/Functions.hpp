@@ -202,6 +202,7 @@ class Life_Client_Core {
         class receiveMoney {};
         class revealObjects {};
         class saveGear {};
+		class safezone {};
         class searchPosEmpty {};
         class simDisable {};
         class stripDownPlayer {};
