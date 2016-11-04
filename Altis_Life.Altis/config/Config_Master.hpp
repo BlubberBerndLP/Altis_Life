@@ -48,7 +48,7 @@ class Life_Settings {
     donor_level = false; //Enable the donor level set in database (var = life_donorlevel; levels = 0,1,2,3,4,5). ATTENTION! Before enabling, read: https://www.bistudio.com/community/game-content-usage-rules & https://www.bistudio.com/monetization
     enable_fatigue = true; //Set to false to disable the ARMA 3 fatigue system.
     total_maxWeight = 24; //Static variable for the maximum weight allowed without having a backpack
-    respawn_timer = 60; //How many seconds a player should wait, before being able to respawn. Minimum 5 seconds.
+    respawn_timer = 120; //How many seconds a player should wait, before being able to respawn. Minimum 5 seconds.
 
     /* Channel 7 News Station Configurations */
     news_broadcast_cost = 150000; //Cost for a player to send a news station broadcast.
@@ -101,20 +101,20 @@ class Life_Settings {
 	jail_forceWalk = true;
 
     /* Medical System Configurations */
-    revive_cops = true; //true to enable cops the ability to revive everyone or false for only medics/ems.
+    revive_cops = false; //true to enable cops the ability to revive everyone or false for only medics/ems.
     revive_fee = 15000; //Revive fee that players have to pay and medics only EMS(independent) are rewarded with this amount.
     hospital_heal_fee = 100; //Fee to heal at a hospital NPC
 
     /* Paycheck & Bank System Configurations */
-    bank_cop = 1000000000; //Amount of cash in bank for new cops
-    bank_civ = 1000000000; //Amount of cash in bank for new civillians
-    bank_med = 1000000000; //Amount of cash in bank for new medics
+    bank_cop = 50000000; //Amount of cash in bank for new cops
+    bank_civ = 50000000; //Amount of cash in bank for new civillians
+    bank_med = 50000000; //Amount of cash in bank for new medics
 
-    paycheck_cop = 2500000000; //Payment for cops
-    paycheck_civ = 1000000000; //Payment for civillians
-    paycheck_med = 2000000000; //Payment for medics
+    paycheck_cop = 15000; //Payment for cops
+    paycheck_civ = 15000; //Payment for civillians
+    paycheck_med = 15000; //Payment for medics
 
-    paycheck_period = 10; //Scaled in minutes
+    paycheck_period = 30; //Scaled in minutes
     bank_transferTax = .05; //Tax that player pays when transferring money from ATM. Tax = Amount * multiplier
 
     /* Player Job System Configurations */
